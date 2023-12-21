@@ -1,0 +1,9 @@
+{% extends "network/layout2.html" %}
+{% block body %}
+<h2>{{ user.username }}'s Followers</h2>
+  <ul>
+    {% for username in followers %}
+      <li>@{{ username }}</li>
+    {% endfor %}
+  </ul>
+  {% endblock %}
